@@ -1,0 +1,4 @@
+name: productivity
+type: duckdb
+options:
+  filename: ../../data/productivity.duckdb
