@@ -16,6 +16,11 @@ The dashboard is designed for decision-making rather than model complexity. It n
 - `Setup`: `% with first PR by day 30`
 - `Ramp`: `% at local benchmark by day 90`
 
+## Which Repo To Open
+
+- Open this repo if you want the live dashboard and the shortest possible review path.
+- Open `new-hire-productivity-case-study` if you want the full source work: dbt models, DuckDB snapshot, dashboard source, and supporting investigation material.
+
 ## What This Shows
 
 The dashboard argues that onboarding performance is easier to manage when `setup` and `ramp` are separated.
