@@ -1,6 +1,6 @@
 ---
 title: Integration
-sidebar_position: 1
+sidebar_position: 3
 queries:
   - role_categories: dev/proposed_setup_role_categories.sql
   - employee_types: dev/proposed_setup_employee_types.sql
@@ -12,17 +12,17 @@ queries:
 ---
 
 <div class="page-flow page-flow--top">
-  <a class="page-flow-link" href="/appendix/setup-holiday-adjustment">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Prev page</span>
-    <span class="page-flow-title">← Setup Holiday Adjustment</span>
+    <span class="page-flow-title">← Ideas Tested and Set Aside</span>
   </a>
 </div>
 
 <p class="eyebrow page-eyebrow">Appendix</p>
 <p><strong>Current status:</strong> the repo-based <code>core</code> / <code>central work</code> proxies are directionally interesting, but not clean enough to support a confident KPI or a clear management finding.</p>
 
-<p class="appendix-backlink"><a href="/appendix">Back to appendix overview</a></p>
-<p class="mini-caption">This route is the archived deep dive behind the <a href="/appendix/investigated#2-the-integration-proxy-is-interesting-but-not-defensible-enough">integration-proxy decision log entry</a>.</p>
+<p class="appendix-backlink"><a href="/appendix/ideas-tested">Back to ideas tested and set aside</a></p>
+<p class="mini-caption">This route is the archived deep dive behind the <a href="/appendix/ideas-tested#2-the-integration-proxy-is-interesting-but-not-defensible-enough">integration-proxy decision log entry</a>.</p>
 
 <div class="section-intro">
   <h2>Integration Proxy</h2>
@@ -151,8 +151,8 @@ queries:
 </Details>
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/consistency">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Next page</span>
-    <span class="page-flow-title">Consistency Lens →</span>
+    <span class="page-flow-title">Ideas Tested and Set Aside →</span>
   </a>
 </div>

@@ -34,7 +34,7 @@ queries:
 
 - We have employee data starting from <code>2014-06-16</code>, but merged PR data only starts from <code>2025-03-01</code>.
 - We can only track new-hire productivity from <code>2025-03-01</code> onward.
-- Restoring older PR history would improve benchmarking and let earlier cohorts be measured on the same basis as newer hires.
+- Restoring older PR history would improve local-benchmark comparisons and let earlier cohorts be measured on the same basis as newer hires.
 
 <p>The cutoff on <code>2025-03-01</code> creates an artificial improvement unless we exclude hires whose onboarding began before PR tracking starts.</p>
 

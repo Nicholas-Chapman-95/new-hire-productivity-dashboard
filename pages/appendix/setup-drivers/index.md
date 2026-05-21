@@ -20,9 +20,9 @@ queries:
 ---
 
 <div class="page-flow page-flow--top">
-  <a class="page-flow-link" href="/appendix/investigated">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Prev page</span>
-    <span class="page-flow-title">← Investigated, Not Advanced</span>
+    <span class="page-flow-title">← Ideas Tested and Set Aside</span>
   </a>
 </div>
 
@@ -264,7 +264,7 @@ Supporting detail for the `Setup` driver read. Use this only when the core `Driv
 />
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/cross-office-squads">
+  <a class="page-flow-link" href="/appendix/ideas-tested/cross-office-squads">
     <span class="page-flow-label">Next page</span>
     <span class="page-flow-title">Cross-Office Squads →</span>
   </a>

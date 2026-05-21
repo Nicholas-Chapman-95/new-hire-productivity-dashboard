@@ -1,6 +1,6 @@
 ---
 title: Cross-Office Squads
-sidebar_position: 6
+sidebar_position: 4
 queries:
   - appendix_setup_cross_office_squad_summary: dev/appendix_setup_cross_office_squad_summary.sql
   - appendix_setup_cross_office_london_tallinn: dev/appendix_setup_cross_office_london_tallinn.sql
@@ -8,11 +8,14 @@ queries:
 ---
 
 <div class="page-flow page-flow--top">
-  <a class="page-flow-link" href="/appendix/setup-drivers">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Prev page</span>
-    <span class="page-flow-title">← Setup Drivers Appendix</span>
+    <span class="page-flow-title">← Ideas Tested and Set Aside</span>
   </a>
 </div>
+
+<p class="eyebrow page-eyebrow">Appendix</p>
+<p class="appendix-backlink"><a href="/appendix/ideas-tested">Back to ideas tested and set aside</a></p>
 
 Cross-office squads are worth tracking, but this cut is not strong enough yet to become a default setup lens.
 
@@ -93,8 +96,8 @@ Cross-office squads are worth tracking, but this cut is not strong enough yet to
 </DataTable>
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/setup-holiday-adjustment">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Next page</span>
-    <span class="page-flow-title">Setup Holiday Adjustment →</span>
+    <span class="page-flow-title">Ideas Tested and Set Aside →</span>
   </a>
 </div>

@@ -1,6 +1,6 @@
 ---
-title: Investigated, Not Advanced
-sidebar_position: 4
+title: Ideas Tested and Set Aside
+sidebar_position: 1
 queries:
   - appendix_investigated_summary: dev/appendix_investigated_summary.sql
   - appendix_investigated_context_correlations: dev/appendix_investigated_context_correlations.sql
@@ -29,7 +29,7 @@ queries:
 </div>
 
 <p class="eyebrow page-eyebrow">Appendix</p>
-<p><strong>Current status:</strong> this is the main appendix decision log for ideas that were tested and then set aside because the proxy was weak, the signal was unstable, or the insight was already covered better elsewhere.</p>
+<p><strong>Current status:</strong> this section records ideas we tested, what signal appeared, and why each one was set aside rather than promoted into the operating model.</p>
 
 <p class="appendix-backlink"><a href="/appendix">Back to appendix overview</a></p>
 
@@ -63,14 +63,14 @@ queries:
 </Dropdown>
 </div>
 
-If asked `what did you look into?`, read this page top to bottom. If asked `why not x?`, jump to the matching section below.
+Use this section when the question is `what else did we test?` or `why did this idea not make the cut?`
 
 - [Consistency as a diagnostic, not a KPI](#1-consistency-is-useful-but-not-a-separate-kpi)
 - [Repo-based integration proxy](#2-the-integration-proxy-is-interesting-but-not-defensible-enough)
 - [Cadence and team-context hypotheses](#3-cadence-and-team-context-did-not-hold-up)
 - [Other ideas checked and rejected](#4-other-ideas-checked-and-set-aside)
 
-<p class="mini-caption"><strong>What advanced:</strong> <code>time to peer velocity parity</code> survived into the ramp framework, and exact <code>30-day</code> windows replaced calendar <code>ramp_month 0</code>.</p>
+<p class="mini-caption"><strong>What advanced:</strong> <code>time to local benchmark</code> survived into the ramp framework, and exact <code>30-day</code> windows replaced calendar <code>ramp_month 0</code>.</p>
 
 <div class="feature-panel">
   <h2>Investigation summary</h2>
@@ -93,6 +93,15 @@ If asked `what did you look into?`, read this page top to bottom. If asked `why 
   </Details>
 </div>
 
+## Deep Dives For Specific Rejected Ideas
+
+Use these archived working pages only when a specific rejected idea needs more detail than the decision log.
+
+- [Consistency Lens](/appendix/ideas-tested/consistency)
+- [Integration](/appendix/ideas-tested/integration)
+- [Cross-Office Squads](/appendix/ideas-tested/cross-office-squads)
+- [Setup Holiday Adjustment](/appendix/ideas-tested/setup-holiday-adjustment)
+
 <div class="feature-panel">
   <h2 id="1-consistency-is-useful-but-not-a-separate-kpi">1. Consistency is useful, but not a separate KPI</h2>
   <p>Spread helps interpret setup performance, but it does not need its own operating page because the same insight is stronger when attached directly to the setup and ramp reads.</p>
@@ -100,7 +109,7 @@ If asked `what did you look into?`, read this page top to bottom. If asked `why 
   <ul>
     <li>Use <code>P25</code>, <code>P50</code>, <code>P75</code>, and <code>IQR</code> to tell whether a slower result reflects a slower center, wider spread, or both.</li>
     <li>The signal is useful diagnostically, but it overlaps the current proposed pages instead of changing the recommendation.</li>
-    <li>The deeper archived working page is still available at <a href="/appendix/consistency">Consistency Lens</a>.</li>
+    <li>The deeper archived working page is still available at <a href="/appendix/ideas-tested/consistency">Consistency Lens</a>.</li>
   </ul>
 
   <div class="metric-strip metric-strip--centered">
@@ -149,7 +158,7 @@ If asked `what did you look into?`, read this page top to bottom. If asked `why 
   <ul>
     <li>The gap between <code>First PR</code> and <code>Core Repo PR</code> is directionally interesting.</li>
     <li>The weakness is construct quality, not absence of any signal.</li>
-    <li>The deeper archived working page is still available at <a href="/appendix/integration">Integration</a>.</li>
+    <li>The deeper archived working page is still available at <a href="/appendix/ideas-tested/integration">Integration</a>.</li>
   </ul>
 
   <LineChart
@@ -230,12 +239,12 @@ If asked `what did you look into?`, read this page top to bottom. If asked `why 
 
   <ul>
     <li>First-PR cycle time was checked as a possible friction read, but the signal was weak and timestamp validity issues limited confidence.</li>
-    <li>Holiday-adjusted working days were checked, but they did not change the setup read enough to replace the calendar-day default. The useful finding was year-end PR seasonality instead, preserved at <a href="/appendix/setup-holiday-adjustment">Setup Holiday Adjustment</a>.</li>
+    <li>Holiday-adjusted working days were checked, but they did not change the setup read enough to replace the calendar-day default. The useful finding was year-end PR seasonality instead, preserved at <a href="/appendix/ideas-tested/setup-holiday-adjustment">Setup Holiday Adjustment</a>.</li>
     <li>Permanent, intern, and <code>Other</code> employee types behave too differently to share one onboarding KPI.</li>
     <li><code>Fixed-Term</code> had no meaningful valid engineering onboarding sample in the reliability slice.</li>
     <li>Calendar <code>ramp_month 0</code> was tested and rejected because exact <code>30-day</code> windows are structurally fairer for late-month hires.</li>
-    <li>Manager-hierarchy benchmarking was explored, but the reporting lines were not clean enough in the available data to identify reliable hiring chains.</li>
-    <li>Cross-office squads were checked as a setup hypothesis, but the current sample is still too office-skewed to justify a default lens. The preserved drilldown is at <a href="/appendix/cross-office-squads">Cross-Office Squads</a>.</li>
+    <li>Manager-hierarchy local-benchmark comparisons were explored, but the reporting lines were not clean enough in the available data to identify reliable hiring chains.</li>
+    <li>Cross-office squads were checked as a setup hypothesis, but the current sample is still too office-skewed to justify a default lens. The preserved drilldown is at <a href="/appendix/ideas-tested/cross-office-squads">Cross-Office Squads</a>.</li>
   </ul>
 </div>
 
@@ -245,8 +254,8 @@ If asked `what did you look into?`, read this page top to bottom. If asked `why 
 </div>
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/setup-drivers">
+  <a class="page-flow-link" href="/appendix/ideas-tested/consistency">
     <span class="page-flow-label">Next page</span>
-    <span class="page-flow-title">Setup Drivers Appendix →</span>
+    <span class="page-flow-title">Consistency Lens →</span>
   </a>
 </div>

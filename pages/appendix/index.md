@@ -13,25 +13,32 @@ queries: []
 
 Use this section when the follow-up question is `what else did you test?` or `why didn't you use x?`
 
-This appendix now has one primary reading path:
+This appendix now has two distinct jobs:
 
-- [Investigated, Not Advanced](/appendix/investigated): the single decision log for tested ideas, what signal appeared, and why each idea stopped
+- [Additional Data We'd Want](/appendix/future-data): follow-up data that would make the setup and ramp story more explanatory, if we could get it
+- [Ideas Tested and Set Aside](/appendix/ideas-tested): the main decision log for ideas we explored, what signal appeared, and why each one stopped
+- [Setup Drivers Appendix](/appendix/setup-drivers): supporting backup for the current `Setup > Drivers` page, not a rejected idea
 
-Start there first. It is the shortest complete answer to what was investigated and why those ideas did not become part of the operating model.
+Start with `Ideas Tested and Set Aside` when the question is about ideas that did not make the operating model.
 
-## Archive Access
+## Rejected-Idea Deep Dives
 
-If a reviewer asks for the underlying working pages behind a specific rejected idea, use these archive routes as backup material rather than part of the normal reading path.
+These archive routes now sit under that rejected-ideas section and hold the deeper working pages behind specific decision-log entries.
+
+- [Consistency Lens](/appendix/ideas-tested/consistency): archived deep dive for the spread and percentile-band diagnostic
+- [Integration](/appendix/ideas-tested/integration): archived deep dive for the repo-based `core` / `central work` proxy
+- [Cross-Office Squads](/appendix/ideas-tested/cross-office-squads): archived setup follow-up on mixed-office squads
+- [Setup Holiday Adjustment](/appendix/ideas-tested/setup-holiday-adjustment): archived setup follow-up on working-day adjustment and seasonality
+
+## Supporting Detail For The Adopted Framework
+
+This route stays outside the rejected-ideas section because it supports a page that did make the cut.
 
 - [Setup Drivers Appendix](/appendix/setup-drivers): backup tables and ranked checks behind `Setup > Drivers`
-- [Cross-Office Squads](/appendix/cross-office-squads): archived setup follow-up on mixed-office squads
-- [Setup Holiday Adjustment](/appendix/setup-holiday-adjustment): archived setup follow-up on working-day adjustment and seasonality
-- [Integration](/appendix/integration): archived deep dive for the repo-based `core` / `central work` proxy
-- [Consistency Lens](/appendix/consistency): archived deep dive for the spread and percentile-band diagnostic
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/investigated">
+  <a class="page-flow-link" href="/appendix/future-data">
     <span class="page-flow-label">Next page</span>
-    <span class="page-flow-title">Investigated, Not Advanced →</span>
+    <span class="page-flow-title">Additional Data We'd Want →</span>
   </a>
 </div>

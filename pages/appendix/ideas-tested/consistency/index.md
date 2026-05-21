@@ -15,15 +15,16 @@ queries:
 ---
 
 <div class="page-flow page-flow--top">
-  <a class="page-flow-link" href="/appendix/integration">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Prev page</span>
-    <span class="page-flow-title">← Integration</span>
+    <span class="page-flow-title">← Ideas Tested and Set Aside</span>
   </a>
 </div>
 
 <p class="eyebrow page-eyebrow">Appendix</p>
 <p><strong>Current status:</strong> this spread view is useful as a supporting diagnostic, but it no longer needs to sit as a main page in the proposed operating model because the core consistency ideas have been rolled into setup and ramp interpretation.</p>
-<p class="mini-caption">This route is the archived deep dive behind the <a href="/appendix/investigated#1-consistency-is-useful-but-not-a-separate-kpi">consistency decision log entry</a>.</p>
+<p class="appendix-backlink"><a href="/appendix/ideas-tested">Back to ideas tested and set aside</a></p>
+<p class="mini-caption">This route is the archived deep dive behind the <a href="/appendix/ideas-tested#1-consistency-is-useful-but-not-a-separate-kpi">consistency decision log entry</a>.</p>
 
 <p>Default scope: valid onboarding cases only, <code>Software Engineering</code> hires, <code>Permanent</code> employees.</p>
 
@@ -196,8 +197,8 @@ queries:
 </Details>
 
 <div class="page-flow page-flow--bottom">
-  <a class="page-flow-link" href="/appendix/investigated">
+  <a class="page-flow-link" href="/appendix/ideas-tested">
     <span class="page-flow-label">Next page</span>
-    <span class="page-flow-title">Investigated, Not Advanced →</span>
+    <span class="page-flow-title">Ideas Tested and Set Aside →</span>
   </a>
 </div>

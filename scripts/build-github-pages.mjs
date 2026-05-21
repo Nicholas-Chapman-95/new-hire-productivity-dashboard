@@ -64,8 +64,9 @@ function withDeploymentBasePath(content, basePath) {
 
 function runEvidenceBuild(buildDir) {
   return new Promise((resolve, reject) => {
-    const child = spawn('npx', ['evidence', 'build'], {
+    const child = spawn('npx evidence build', {
       cwd: projectRoot,
+      shell: true,
       stdio: 'inherit',
       env: {
         ...process.env,
@@ -89,11 +90,28 @@ const repoName = getRepoName();
 const basePath = normalizeBasePath(process.env.GITHUB_PAGES_BASE_PATH ?? `/${repoName}`);
 const buildDir = process.env.EVIDENCE_BUILD_DIR ?? `./build/${repoName}`;
 const originalConfig = await fs.readFile(configPath, 'utf8');
+let restored = false;
+
+async function restoreConfig() {
+  if (restored) return;
+  restored = true;
+  await fs.writeFile(configPath, originalConfig, 'utf8');
+}
+
+const signalHandler = async (signal) => {
+  await restoreConfig();
+  process.exit(signal === 'SIGINT' ? 130 : 143);
+};
+
+process.on('SIGINT', signalHandler);
+process.on('SIGTERM', signalHandler);
 
 await fs.writeFile(configPath, withDeploymentBasePath(originalConfig, basePath), 'utf8');
 
 try {
   await runEvidenceBuild(buildDir);
 } finally {
-  await fs.writeFile(configPath, originalConfig, 'utf8');
+  await restoreConfig();
+  process.off('SIGINT', signalHandler);
+  process.off('SIGTERM', signalHandler);
 }

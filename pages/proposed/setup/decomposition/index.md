@@ -176,7 +176,7 @@ Use this page to see where the bounded `% with first PR by day 30` setup KPI is 
   </Details>
 </Details>
 
-<p class="mini-caption">Additional drilldowns, office-by-office comparison tables, monthly consistency views, and ranked follow-ups are preserved in the <a href="/appendix/setup-drivers">Setup Drivers Appendix</a>. Cross-office squad investigation is also summarised in <a href="/appendix/cross-office-squads">Cross-Office Squads</a>.</p>
+<p class="mini-caption">Additional drilldowns, office-by-office comparison tables, monthly consistency views, and ranked follow-ups are preserved in the <a href="/appendix/setup-drivers">Setup Drivers Appendix</a>. Cross-office squad investigation is also summarised in <a href="/appendix/ideas-tested/cross-office-squads">Cross-Office Squads</a>.</p>
 
 <div class="page-flow page-flow--bottom">
   <a class="page-flow-link" href="/proposed/ramp">

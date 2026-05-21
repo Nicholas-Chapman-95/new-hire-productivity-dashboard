@@ -18,13 +18,13 @@ queries:
   </a>
 </div>
 
-Start with raw ramp pace across exact `30-day` windows, then use local benchmarking to judge whether that pace is enough.
+Start with raw ramp pace across exact `30-day` windows, then use the local benchmark to judge whether that pace is enough.
 
 <p class="mini-caption"><strong>Local benchmark:</strong> the typical tenured-engineer PR pace over a comparable `30-day` window, using `office + squad` where possible, otherwise `office + level`, otherwise `office`, otherwise the overall engineering benchmark.</p>
 <p class="mini-caption"><strong>Scope:</strong> valid onboarding cases only, `Software Engineering` hires, `Permanent` employees.</p>
 
 - Raw PR pace is the first read because it shows the actual ramp shape in `0-29`, `30-59`, and `60-89`.
-- Benchmarking is the second read because raw output alone does not tell us whether that pace is enough for the hire's local environment.
+- The local-benchmark read is second because raw output alone does not tell us whether that pace is enough for the hire's local environment.
 - Use `% at local benchmark by day 90` as the main checkpoint once we move from raw pace to relative sufficiency.
 
 <div class="metric-strip metric-strip--centered">
@@ -60,17 +60,17 @@ Start with raw ramp pace across exact `30-day` windows, then use local benchmark
     yAxisTitle=true
 />
 
-## Benchmarking
+## Local Benchmark
 
 Use this after the raw pace read. This section asks whether the observed ramp is enough to match normal local peer pace.
 
 - `% at local benchmark by day 90` is the main end-of-probation checkpoint.
-- `Median days to benchmark` is the supporting pace summary.
-- `% at benchmark by day 60` is an earlier watchpoint, not a second headline KPI.
+- `Median days to local benchmark` is the supporting pace summary.
+- `% at local benchmark by day 60` is an earlier watchpoint, not a second headline KPI.
 
 <Grid cols=2>
-<BigValue data={proposed_ramp_summary_cards} value=benchmark_by_day_90 title="% At Benchmark By Day 90" fmt=pct1 />
-<BigValue data={proposed_ramp_summary_cards} value=median_days_to_benchmark title="Median Days to Benchmark" fmt=num0 />
+<BigValue data={proposed_ramp_summary_cards} value=benchmark_by_day_90 title="% At Local Benchmark By Day 90" fmt=pct1 />
+<BigValue data={proposed_ramp_summary_cards} value=median_days_to_benchmark title="Median Days to Local Benchmark" fmt=num0 />
 </Grid>
 
 <LineChart
@@ -78,7 +78,7 @@ Use this after the raw pace read. This section asks whether the observed ramp is
     x=day_window_label
     y=pr_count
     series=series
-    title="Median New-Hire PRs vs Benchmark PR Levels"
+    title="Median New-Hire PRs vs Local Benchmark PR Levels"
     yFmt=num1
     yMin=0
     sort=false
@@ -88,10 +88,10 @@ Use this after the raw pace read. This section asks whether the observed ramp is
     yAxisTitle=true
 />
 
-<p class="mini-caption">If raw PR volume rises but the new-hire line still sits well below benchmark, the issue is not just absolute output. It is that hires are still behind the normal pace for their local peer group.</p>
+<p class="mini-caption">If raw PR volume rises but the new-hire line still sits well below the local benchmark, the issue is not just absolute output. It is that hires are still behind the normal pace for their local peer group.</p>
 
 <Details title="Supporting context and diagnostics">
-  <p><strong>Earlier watchpoint:</strong> <Value data={proposed_ramp_summary_cards} column=benchmark_by_day_60 fmt=pct1 /> at benchmark by day `60`.</p>
+  <p><strong>Earlier watchpoint:</strong> <Value data={proposed_ramp_summary_cards} column=benchmark_by_day_60 fmt=pct1 /> at local benchmark by day `60`.</p>
   <p><strong>Eligible hires:</strong> <Value data={proposed_ramp_summary_cards} column=hires fmt=num0 />.</p>
 
   <DataTable data={proposed_ramp_curve}>
@@ -104,7 +104,7 @@ Use this after the raw pace read. This section asks whether the observed ramp is
 
   <p>Exact `0-29`, `30-59`, and `60-89` day windows avoid the old calendar-month distortion where late-month hires were structurally penalized in `ramp_month 0`.</p>
 
-  <p>Cohort shape is a supporting lens only. Use it to see whether cohorts accumulate contribution at similar rates over time, not to override the benchmark read.</p>
+  <p>Cohort shape is a supporting lens only. Use it to see whether cohorts accumulate contribution at similar rates over time, not to override the local-benchmark read.</p>
 
   <LineChart
       data={proposed_ramp_cohort_cumulative_avg}
@@ -138,11 +138,11 @@ Use this after the raw pace read. This section asks whether the observed ramp is
   <DataTable data={proposed_ramp_segment_benchmarks}>
       <Column id=segment_type title="Segment Type" />
       <Column id=segment title="Segment" />
-      <Column id=benchmark_pr_target title="Benchmark PRs / Month" fmt=num0 />
+      <Column id=benchmark_pr_target title="Local Benchmark PRs / Month" fmt=num0 />
       <Column id=hires title="Hires" fmt=num0 />
-      <Column id=median_days_to_benchmark title="Median Days to Benchmark" fmt=num0 />
-      <Column id=benchmark_by_day_60 title="% At Benchmark By Day 60" fmt=pct1 />
-      <Column id=benchmark_by_day_90 title="% At Benchmark By Day 90" fmt=pct1 />
+      <Column id=median_days_to_benchmark title="Median Days to Local Benchmark" fmt=num0 />
+      <Column id=benchmark_by_day_60 title="% At Local Benchmark By Day 60" fmt=pct1 />
+      <Column id=benchmark_by_day_90 title="% At Local Benchmark By Day 90" fmt=pct1 />
   </DataTable>
 </Details>
 

@@ -69,7 +69,7 @@ We should watch the groups that stay weak in `30-59` and `60-89` and still have 
       yAxisTitle=true
 />
 
-    <p class="mini-caption">A flat or lagging hit-rate curve means the group is not catching up to normal local peer pace as the ramp progresses.</p>
+    <p class="mini-caption">A flat or lagging hit-rate curve means the group is not catching up to the normal pace implied by its local benchmark as the ramp progresses.</p>
     <p class="mini-caption">We should still read this against the raw pace view. If a local office or squad is underperforming overall, a new hire can hit that local benchmark without actually reaching a strong absolute pace.</p>
   </Tab>
 </Tabs>
@@ -102,13 +102,13 @@ This table compares `office`, `level`, `sub-team`, and `squad` on the same three
       <Column id=median_prs_30_59 title="Median PRs, 30-59" fmt=num1 />
       <Column id=benchmark_by_day_90 title="% Hitting Local Benchmark By Day 90" fmt=num1 />
       <Column id=median_prs_60_89 title="Median PRs, 60-89" fmt=num1 />
-      <Column id=median_days_to_benchmark title="Median Days to Benchmark" fmt=num1 />
+      <Column id=median_days_to_benchmark title="Median Days to Local Benchmark" fmt=num1 />
   </DataTable>
 
   <p class="mini-caption">If a group is low on raw pace but not low on `day 90` attainment, the issue is more likely about early shape than overall ramp sufficiency. If it is weak on both, that is a stronger ramp problem.</p>
 </Details>
 
-<Details title="Show full by-window benchmark detail">
+<Details title="Show full by-window local-benchmark detail">
   <DataTable data={proposed_ramp_decomposition_summary}>
       <Column id=group_label title="Group" />
       <Column id=hires title="Hires" fmt=num0 />
@@ -119,8 +119,8 @@ This table compares `office`, `level`, `sub-team`, and `squad` on the same three
       <Column id=median_prs_90_119 title="Median PRs, 90-119" fmt=num1 />
       <Column id=median_prs_120_149 title="Median PRs, 120-149" fmt=num1 />
       <Column id=median_prs_150_179 title="Median PRs, 150-179" fmt=num1 />
-      <Column id=median_days_to_benchmark title="Median Days to Benchmark" fmt=num1 />
-      <Column id=benchmark_by_day_60 title="% At Benchmark By Day 60" fmt=num1 />
+      <Column id=median_days_to_benchmark title="Median Days to Local Benchmark" fmt=num1 />
+      <Column id=benchmark_by_day_60 title="% At Local Benchmark By Day 60" fmt=num1 />
       <Column id=benchmark_by_day_90 title="% Hitting Local Benchmark By Day 90" fmt=num1 />
   </DataTable>
 </Details>

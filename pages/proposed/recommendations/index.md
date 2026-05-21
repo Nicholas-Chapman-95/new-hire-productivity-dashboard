@@ -11,9 +11,7 @@ queries: []
   </a>
 </div>
 
-Keep `time to first PR` as supporting setup context, use `% with first PR by day 30` as the main setup KPI, and use ramp benchmarks to judge how quickly hires catch up to normal peer pace after that first PR.
-
-<p class="mini-caption">This page uses the same local benchmark definition as the Ramp page.</p>
+Keep `time to first PR` as supporting setup context, use `% with first PR by day 30` as the main setup KPI, and use the local benchmark to judge how quickly hires catch up to normal peer pace after that first PR.
 
 ## What Leadership Should Track
 
@@ -39,7 +37,7 @@ Use two headline KPIs and keep `time to first PR` as supporting setup context ra
 
 - `% with first PR by day 60` when setup needs a second check
 - `% at local benchmark by day 60` as an earlier ramp warning read
-- `median days to benchmark` as a pace summary alongside the `day 90` ramp KPI
+- `median days to local benchmark` as a pace summary alongside the `day 90` ramp KPI
 
 ## Business Actions
 
@@ -48,12 +46,12 @@ The current evidence points to a short list of concrete follow-ups rather than a
 - `Setup`: the strongest current structural weakness is office-level, with `Singapore` materially behind `London` and `Tallinn` on `% with first PR by day 30`. We should review access, environment readiness, first-task design, and review-path friction there before treating the issue as a general productivity problem.
 - `Ramp`: the current watchlist is concentrated in `Catalyst` squad, `L7`, and `Singapore` office. We should check whether those groups stay weak in both `30-59` and `60-89`, then review onboarding path, task difficulty, and review/support coverage for those specific groups.
 - `Cross-office squads`: keep this as a secondary follow-up only. The current sample is still too office-skewed to justify it as a default management lens.
-- `Data history`: recover older PR history if possible. The PR table currently starts on `2025-03-01`, which limits historical setup reads and weakens longer-run ramp benchmarking.
+- `Data history`: recover older PR history if possible. The PR table currently starts on `2025-03-01`, which limits historical setup reads and weakens longer-run local-benchmark comparisons.
 - `Data quality`: clean or exclude impossible PR timestamp rows before using PR-based setup or ramp metrics operationally.
 
 ## What Should Stay Diagnostic
 
-Keep these as supporting reads, not headline KPIs.
+Keep the following as supporting reads, not headline KPIs.
 
 - `Spread and consistency`: use `P25`, `P50`, `P75`, and cohort size to tell whether movement is a slower center, a wider spread, or both
 - `Cohort mix and segment shifts`: use them to stop leadership from misreading changing hiring allocation as onboarding deterioration
@@ -68,7 +66,7 @@ Keep current watchpoints on the driver pages rather than on this policy page.
 
 ## What To Retire Or Narrow
 
-Do not use these as headline KPIs.
+Don't use the following as headline KPIs.
 
 - a single global `time to first PR` score as the leadership headline
 - first-PR cycle time on its own
