@@ -3,6 +3,9 @@
 Live dashboard:
 `https://nicholas-chapman-95.github.io/new-hire-productivity-dashboard/`
 
+Full source repo:
+`https://github.com/Nicholas-Chapman-95/new-hire-productivity-case-study`
+
 This project is a compact analytics case study on new-hire productivity in software engineering teams. It asks two practical questions:
 
 - How quickly do new hires reach a first meaningful contribution?
@@ -20,6 +23,8 @@ The dashboard argues that onboarding performance is easier to manage when `setup
 - `Setup` is about early unblocking: access, environment readiness, first-task design, and review-path friction.
 - `Ramp` is about whether a new hire catches up to the normal pace for their local team context after that first contribution.
 - Supporting appendix pages preserve rejected ideas, diagnostic checks, and follow-up data we would want next.
+
+If you want to inspect the modeling and transformation work behind the dashboard, the separate source repo includes the dbt project, DuckDB snapshot, and dashboard source.
 
 ## Suggested Reading Path
 
