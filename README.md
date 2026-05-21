@@ -6,6 +6,8 @@ Live dashboard:
 Full source repo:
 `https://github.com/Nicholas-Chapman-95/new-hire-productivity-case-study`
 
+![Dashboard preview](tests/e2e/dashboard-smoke.spec.js-snapshots/summary-hero-darwin.png)
+
 This project is a compact analytics case study on new-hire productivity in software engineering teams. It asks two practical questions:
 
 - How quickly do new hires reach a first meaningful contribution?
